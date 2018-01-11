@@ -76,7 +76,7 @@ describe Money do
     let(:fifty_eur) { Money.new(50, 'EUR') }
     let(:twenty_dollars) { Money.new(20, 'USD') }
 
-    it 'should ' do
+    it 'should support arithmetic operators between moneys' do
       expect(fifty_eur + twenty_dollars).to eq(Money.new(66.82326621923937, 'EUR'))
     end
 
